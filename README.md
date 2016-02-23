@@ -40,15 +40,15 @@ for details)
     url('', include('social.apps.django_app.urls', namespace='social')),
     ```
 
-- Optional: if you are testing with a non-production version of the Texas Tribune app, you can set `TEXASTRIBUNE_BASE_URL` in your `settings.py`. For instance, if you want to test against staging, you could set it to `https://varnish-test.texastribune.org/`
+- Optional: if you are testing with a non-production version of the Texas Tribune app,
+you can set `TEXASTRIBUNE_BASE_URL` in your `settings.py`. For instance,
+if you want to test against a local server, you could set it to `http://local.texastribune.org:8000/`.
 - Optional: you may want to set a `LOGIN_REDIRECT_URL`, which is where the login will redirect when complete.
 
 Test it out by navigating to `/login/texastribune` and confirm that it goes through the whole handshake and drops you off at the `LOGIN_REDIRECT_URL`.
 
 Development & Tests
 -------------------
-
-.. code-block:: console
 
     pip install -e .[test]
     py.test
