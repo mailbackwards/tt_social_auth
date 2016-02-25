@@ -8,7 +8,7 @@ with codecs_open('README', encoding='utf-8') as f:
 
 
 setup(name='tt_social_auth',
-      version='0.0.1',
+      version='0.0.2',
       description=u"Social auth backend for the Texas Tribune",
       long_description=long_description,
       classifiers=[],
