@@ -22,6 +22,9 @@ class TribOAuth2(BaseOAuth2):
             'email': response.get('email') or '',
             'first_name': response.get('first_name') or '',
             'last_name': response.get('last_name') or '',
+            # Only authenticate staff
+            'is_staff': (response.get('is_staff', False) and
+                         tt_auth_settings.AUTHENTICATE_TEXASTRIBUNE_STAFF)
         }
 
     def user_data(self, access_token, *args, **kwargs):

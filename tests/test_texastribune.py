@@ -16,7 +16,8 @@ class TribOAuth2Test(OAuth2Test):
         'username': 'foobar',
         'email': 'foo@bar.com',
         'first_name': 'Foo',
-        'last_name': 'Bar'
+        'last_name': 'Bar',
+        'is_staff': False
     })
 
     def test_login(self):

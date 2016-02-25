@@ -40,6 +40,8 @@ for details)
     url('', include('social.apps.django_app.urls', namespace='social')),
     ```
 
+- Optional: if you don't want admins in Texas Tribune to be admins in this app,
+set `AUTHENTICATE_TEXASTRIBUNE_STAFF=False` in your Django settings or env var.
 - Optional: if you are testing with a non-production version of the Texas Tribune app,
 you can set `TEXASTRIBUNE_BASE_URL` in your `settings.py`. For instance,
 if you want to test against a local server, you could set it to `http://local.texastribune.org:8000/`.
