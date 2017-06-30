@@ -8,7 +8,7 @@ with codecs_open('README.rst', encoding='utf-8') as f:
 
 
 setup(name='tt_social_auth',
-      version='0.0.3',
+      version='0.0.4',
       description=u"Social auth backend for the Texas Tribune",
       long_description=long_description,
       classifiers=[],
@@ -21,7 +21,7 @@ setup(name='tt_social_auth',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'python-social-auth==0.2.14',
+          'python-social-auth==0.2.21',
       ],
       extras_require={
           'test': ['pytest', 'httpretty', 'unittest2'],
